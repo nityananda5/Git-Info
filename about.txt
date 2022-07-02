@@ -16,3 +16,84 @@ There is no step three. Just commit and push to GitHub as you normally would; fo
 git add file.psd
 git commit -m "Add design file"
 git push origin main
+
+//Extra
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About
+$ git lfs install
+Git LFS initialized.
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About
+$ git lfs track "*.txt"
+Not in a Git repository.
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About
+$ git lfs track ".txt"
+Not in a Git repository.
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About
+$ git init
+Initialized empty Git repository in D:/About/.git/
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git config --global user.name "nityananda5"
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git config --global user.email "nityanandabasumatary2271@gmail.com"
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git lfs track ".txt"
+Tracking ".txt"
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git add "About.txt"
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git commit -m "Initial Commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitattributes
+        about.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git add "about.txt"
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) 4883190] Initial Commit
+ 1 file changed, 18 insertions(+)
+ create mode 100644 about.txt
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitattributes
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git remote add origin https://github.com/nityananda5/Git-Info.git
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git branch -M master
+
+ASUS@LAPTOP-04AP31L4 MINGW64 /d/About (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 748 bytes | 748.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nityananda5/Git-Info.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
